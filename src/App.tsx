@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { Button } from 'antd';
 import './App.css';
-import Loading from "./loading/loading";
+import Gallery from "./gallery/Gallery";
 
 const logo = require('./logo.svg');
 
@@ -16,8 +15,7 @@ class App extends React.Component {
                 <p className="App-intro">
                     To get started, edit <code>src/App.tsx</code> and save to reload.
                 </p>
-                <Button type="primary">Button1</Button>
-                <Loading spin="none"/>
+                <Gallery/>
             </div>
         );
     }
