@@ -108,7 +108,8 @@ export default class Gallery extends React.Component<GalleryProps, GalleryState>
     componentDidMount() {
         let stageDOM = ReactDOM.findDOMNode(this.refs.stage);
         let stageWidth = stageDOM.scrollWidth;
-        let stageHeight = stageDOM.scrollHeight;
+        // let stageHeight = stageDOM.scrollHeight;
+        let stageHeight = document.body.scrollHeight;
         let halfStageWidth = Math.ceil(stageWidth / 2);
         let halfStageHeight = Math.ceil(stageHeight / 2);
         
